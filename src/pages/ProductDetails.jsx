@@ -48,7 +48,7 @@ const ProductDetails = () => {
              $ {product.price}
             </p>
 
-            <button onClick={() => addToCart(id)} className="bg-black w-28 font-semibold text-white p-2">
+            <button onClick={() => addToCart(product, product.id)} className="bg-black w-28 font-semibold text-white p-2">
               Add to Cart
             </button>
           </div>
