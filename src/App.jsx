@@ -1,6 +1,6 @@
 import React from 'react'
 import useEffect from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Home from './pages/Home'
@@ -24,7 +24,8 @@ const App = () => {
 
   return (
     <>
-    <BrowserRouter>
+    <HashRouter>
+    
     <Header />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -33,7 +34,7 @@ const App = () => {
       </Routes>
     <Footer />
       
-    </BrowserRouter>
+    </HashRouter>
     </>
   )
 }
