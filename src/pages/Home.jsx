@@ -17,16 +17,16 @@ const Home = () => {
     
     <div>
       <div className='relative'>
-        <div className='mt-14'>
-          <img src={shopimg} alt="" />
+        <div className='mt-14 '>
+          <img className='h-80 w-full sm:h-full' src={shopimg} alt="" />
         </div>
-      <div className="absolute z-50 top-28 left-28 sm:top-36 sm:left-36  justify-center flex flex-col text-blue-600 md:text-4xl">
+      <div className="absolute z-50 top-20 left-16 sm:top-36 sm:left-36  justify-center flex flex-col text-blue-600 md:text-4xl">
         <div className='flex gap-x-2 items-center '>
           <div className='bg-blue-600 h-1 w-10'></div> <h1 className="font-semibold text-xl">NEW WEARS</h1>
         </div>
 
         <div>
-          <h1 className="text-3xl z-50 font-bold tracking-wider text-yellow-500">
+          <h1 className="text-2xl md:text-3xl z-50 font-bold tracking-wider text-yellow-500">
             GOLDEN CLASSY SALES
           </h1>
         </div>
