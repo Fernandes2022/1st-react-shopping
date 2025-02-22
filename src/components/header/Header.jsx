@@ -8,9 +8,9 @@ const Header = () => {
   const {amount} = useContext(CartContext);
 
   return (
-   <div className='flex justify-between p-5 bg-gradient-to-b  fixed right-0 left-0 top-0 z-50 mb-20 bg-white border border-slate-200 border-r-0 border-l-0'>
+   <div className='flex justify-between p-5 bg-gradient-to-b  fixed right-0 left-0 top-0 z-50 mb-20 from-neutral-500 to-purple-500'>
    <div>
-    <a href="/" className='tracking-wider text-xl  bg-gradient-to-r from-green-500 to-red-700 bg-clip-text text-transparent '>SHORP<span className='text-sm'>CART</span></a>
+    <a href="/" className='tracking-wider text-xl  bg-gradient-to-r from-green-500 to-red-700 bg-clip-text text-transparent '>SHOP<span className='text-sm'>CART</span></a>
    </div>  
    <div>
    <Link to={'/cartpage'} >

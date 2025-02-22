@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { ProductContext } from '../components/productContext/ProductContext'
 import Product from '../components/product/Product'
-
+import shopimg from '../assets/shop-img.jpg'
 
 const Home = () => {
 
@@ -16,34 +16,37 @@ const Home = () => {
   return (
     
     <div>
-      <div>
-      <div className="h-[75vh] bg-green-200 flex flex-col space-y-2 pt-36 pl-16 sm:pl-[13rem] md:pl-[18rem] lg:pl-[23rem]">
+      <div className='relative'>
+        <div className='mt-14'>
+          <img src={shopimg} alt="" />
+        </div>
+      <div className="absolute z-50 top-28 left-28 sm:top-36 sm:left-36  justify-center flex flex-col text-blue-600 md:text-4xl">
         <div className='flex gap-x-2 items-center '>
-          <div className='bg-black h-1 w-10'></div> <h1 className="font-semibold text-xl">NEW TREND</h1>
+          <div className='bg-blue-600 h-1 w-10'></div> <h1 className="font-semibold text-xl">NEW WEARS</h1>
         </div>
 
         <div>
-          <h1 className="text-3xl tracking-wider">
-            AUTUMN SALE STYLISH
+          <h1 className="text-3xl z-50 font-bold tracking-wider text-yellow-500">
+            GOLDEN CLASSY SALES
           </h1>
         </div>
 
         <div>
           <h1 className="text-2xl font-bold tracking-wide">
-            WOMENS
+            WOMEN
           </h1>
         </div>
 
         <div>
-          <h1 className='font-semibold underline'>
-            DISCOVER MORE
-          </h1>
+        <a href="#products" className='font-semibold underline'>
+            DISCOVER MORE...
+          </a>
         </div>
       </div>
       </div>
-      <section  className='py-16 mt-8'>
-      <div className="container mx-auto">
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5  gap-[30px] max-w-sm mx-auto sm:max-w-none md:mx-0'>
+      <section  className='py-12 mt-8'>
+      <div className="container mx-auto scroll-mt-20" id='products'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5  gap-2 max-w-sm mx-auto sm:max-w-none md:mx-0'>
             {filteredProducts.map(product => {
                 return <Product product={product} key={product.id} />
             })}
