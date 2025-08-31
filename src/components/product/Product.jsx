@@ -7,7 +7,7 @@ const Product = ({ product }) => {
   const { id, image, category, title, price } = product;
   const { addToCart } = useContext(CartContext);
   return (
-    <div className="px-4">
+    <div className="">
       <div className="group relative mb-4 h-[450px] overflow-hidden border-slate-300 bg-gradient-to-r from-neutral-500 to-purple-500 p-4 transition">
         <div className="mb-5 flex h-full w-full flex-col items-center justify-center">
           <div className="mx-auto flex w-[200px] items-center justify-center">
