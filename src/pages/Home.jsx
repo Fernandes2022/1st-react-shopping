@@ -12,7 +12,6 @@ const Home = () => {
 
   return (
     <div>
-      {/* Hero */}
       <section className="relative mt-16">
         <img
           className="h-[24rem] w-full object-cover sm:h-[30rem]"
@@ -42,7 +41,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Products */}
+      
       <section className="mt-12 py-12">
         <div className="container mx-auto scroll-mt-20 px-4 sm:px-6 lg:px-8" id="products">
           <div className="mb-6 flex items-end justify-between">
@@ -51,7 +50,7 @@ const Home = () => {
               View all
             </a>
           </div>
-          <div className="mx-auto grid grid-cols-2 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          <div className="mx-auto grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
             {filteredProducts.map((product) => {
               return <Product product={product} key={product.id} />;
             })}
